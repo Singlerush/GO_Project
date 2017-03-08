@@ -41,7 +41,7 @@
 		<td><a href="https://github.com/jimmyfengyichun">冯益春</a></td>
 	</tr>
 	<tr>
-		<td>Empty</td>
-		<td><a href="https://github.com/Empty">黄凯凯</a></td>
+		<td>HkkSimple</td>
+		<td><a href="https://github.com/HkkSimple">黄凯凯</a></td>
 	</tr>
 </table>
