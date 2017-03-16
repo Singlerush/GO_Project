@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Spring XML Context</title>
+	</head>
+	
+	<body>
+		<div id="article_content" class="article_content">
+
+			<h3><a href="http://blog.csdn.net/l294265421/article/details/42778829">出处</a></h3>
+			<br>
+			<p><span style="font-size:24px">配置spring，<span style="font-size:24px">配置</span><br>
+			</span></p>
+			<p><span style="font-size:24px">&lt;context:component-scan base-package=&quot;<span style="font-size:24px">包名</span>&quot; /&gt;</span></p>
+			<p><span style="font-size:24px"><span style="font-size:24px">时，报错<span style="font-size:24px">：</span></span></span></p>
+			<p><span style="font-size:24px">The prefix &quot;context&quot; for element &quot;context:component-scan&quot; is not bound.</span></p>
+			<p><font size="5"><font size="5">是因为该配置文件的&lt;<font size="5">beans&gt;<font size="5">&lt;/beans&gt;标签的属性少了东西。<span style="font-size:24px">&lt;beans&gt;加上<span style="font-size:24px">相应属性即可。如下<span style="font-size:24px">图</span>（红线上那一列即为<span style="font-size:24px">需要加上的东西</span>）：</span></span></font></font></font></font></p>
+			<p><font size="5"><font size="5"><font size="5"><span style="font-size:24px"><span style="font-size:24px"><span style="font-size:24px"><img src="http://img.blog.csdn.net/20150116163913776?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbDI5NDI2NTQyMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""></span></span></span></font></font><br>
+			<span style="font-size:24px">下面是需要添加的部分的文字版：</span></font></p>
+			<p><font size="5"><span style="font-size:24px"><span style="font-size:24px"><span style="font-size:24px">xmlns:context=&quot;http://www.springframework.org/schema/context&quot;</span></span></span></font></p>
+			<p><span style="font-size:24px"><span style="font-size:24px"><br>
+			</span></span></p>
+			<p><span style="font-size:24px"><span style="font-size:24px">http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd<br>
+			<br>
+			</span></span></p>
+			<br>
+			   
+		</div>
+
+	</body>
+
+</html>
